@@ -1,5 +1,6 @@
 package com.recycleview.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -309,6 +310,9 @@ public class HomepagerRecycleAdapter extends RecyclerView.Adapter {
        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
            @Override
            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+               if (((Activity)mContext).isFinishing()) {
+                   return;
+               }
                //如果快速滑动， 不加载图片
                if (newState == 2) {
                    Glide.with(mContext).pauseRequests();

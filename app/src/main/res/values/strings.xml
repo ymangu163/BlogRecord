@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">BlogRecord</string>
+
+
+
+
+    <array name="main">
+        <item>UI 设计</item>
+
+
+
+    </array>
+
+    <array name="ui_array">
+        <item>RecycleView 复杂布局</item>
+
+
+
+    </array>
+
+
 </resources>

@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="listDivider" parent="AppTheme">
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
 </resources>
