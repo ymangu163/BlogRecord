@@ -3,9 +3,15 @@
     package="com.recycleview">
 
     <application>
-        <activity android:name=".RecycleActivity"
+        <activity android:name=".activity.RecycleActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
+            />
+        <activity android:name=".activity.FlexboxActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.FlexRecycleActivity"
+            android:screenOrientation="portrait"
             />
     </application>
 

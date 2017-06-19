@@ -13,6 +13,7 @@
 
     <array name="ui_array">
         <item>RecycleView 复杂布局</item>
+        <item>FlexboxLayout 布局</item>
 
 
 

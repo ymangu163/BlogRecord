@@ -12,7 +12,8 @@ import android.widget.Toast;
 import com.blog.record.R;
 import com.blog.record.adapter.HomeAdapter;
 import com.blog.record.view.DividerItemDecoration;
-import com.recycleview.RecycleActivity;
+import com.recycleview.activity.FlexboxActivity;
+import com.recycleview.activity.RecycleActivity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -69,9 +70,10 @@ public class UIActivity extends AppCompatActivity {
         switch (position) {
             case 0:
                 intent = new Intent(this, RecycleActivity.class);
-
                 break;
-
+            case 1:
+                intent = new Intent(this, FlexboxActivity.class);
+                break;
 
 
 

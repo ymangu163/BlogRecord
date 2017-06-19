@@ -1,4 +1,4 @@
-package com.recycleview;
+package com.recycleview.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import com.cjj.MaterialRefreshLayout;
 import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
+import com.recycleview.R;
 import com.recycleview.adapter.HomepagerRecycleAdapter;
 import com.recycleview.bean.Headerbean;
 import com.recycleview.bean.HomeCategory;
