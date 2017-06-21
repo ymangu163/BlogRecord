@@ -6,6 +6,7 @@
 
     <array name="main">
         <item>UI 设计</item>
+        <item>View 封装</item>
 
 
 
@@ -18,6 +19,15 @@
 
 
     </array>
+
+    <array name="enclose_array">
+        <item>PopupWindow 封装</item>
+        <item>FlexboxLayout 布局</item>
+
+
+
+    </array>
+
 
 
 </resources>

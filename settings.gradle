@@ -1,1 +1,1 @@
-include ':app', ':recycleview', ':common'
+include ':app', ':recycleview', ':common', ':enclose'
