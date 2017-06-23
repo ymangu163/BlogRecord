@@ -25,6 +25,9 @@
         <activity android:name=".activity.EncloseActivity"
             android:screenOrientation="portrait"
             />
+        <activity android:name=".activity.CustomActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

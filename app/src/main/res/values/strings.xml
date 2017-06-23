@@ -7,25 +7,23 @@
     <array name="main">
         <item>UI 设计</item>
         <item>View 封装</item>
-
-
+        <item>Custom View</item>
 
     </array>
 
     <array name="ui_array">
         <item>RecycleView 复杂布局</item>
         <item>FlexboxLayout 布局</item>
-
-
-
     </array>
 
     <array name="enclose_array">
         <item>PopupWindow 封装</item>
         <item>FlexboxLayout 布局</item>
+    </array>
 
-
-
+    <array name="custom_array">
+        <item>横向滚动</item>
+        <item>FlexboxLayout 布局</item>
     </array>
 
 

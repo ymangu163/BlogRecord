@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HSelectView">
+        <!--可见数目-->
+        <attr name="seesize" format="integer"/>
+        <!--被选择文字的大小和颜色-->
+        <attr name="SelectedTextSize" format="float"/>
+        <attr name="SelectedTextColor" format="color|reference"/>
+        <!--未被被选择文字的大小和颜色-->
+        <attr name="TextSize" format="float"/>
+        <attr name="TextColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

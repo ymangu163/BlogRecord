@@ -1,30 +1,33 @@
-package com.blog.record;
+package com.blog.record.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
-import com.blog.record.activity.CustomActivity;
-import com.blog.record.activity.EncloseActivity;
-import com.blog.record.activity.UIActivity;
+import com.blog.record.R;
 import com.blog.record.adapter.HomeAdapter;
 import com.blog.record.view.DividerItemDecoration;
+import com.custom.activity.RatioActivity;
+import com.recycleview.activity.FlexboxActivity;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by gao on 2017/6/19.
+ */
+
+public class CustomActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private List<String> mDatas;
     private HomeAdapter mAdapter;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -32,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL_LIST));
-        mAdapter = new HomeAdapter(MainActivity.this);
+        mAdapter = new HomeAdapter(this);
         mRecyclerView.setAdapter(mAdapter);
         initData();
         mAdapter.setOnItemClickLitener(new HomeAdapter.OnItemClickLitener() {
@@ -43,24 +46,25 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onItemLongClick(View view, int position) {
-                Toast.makeText(MainActivity.this, position + " long click",
-                        Toast.LENGTH_SHORT).show();
                 mAdapter.removeData(position);
             }
         });
+    }
+
+    private void initData() {
+        String[] array = getResources().getStringArray(R.array.custom_array);
+        mDatas = Arrays.asList(array);
+        mAdapter.setDatas(mDatas);
     }
 
     private void handleClick(int position) {
         Intent intent = null;
         switch (position) {
             case 0:
-                intent = new Intent(this, UIActivity.class);
+                intent = new Intent(this, RatioActivity.class);
                 break;
             case 1:
-                intent = new Intent(this, EncloseActivity.class);
-                break;
-            case 2:
-                intent = new Intent(this, CustomActivity.class);
+                intent = new Intent(this, FlexboxActivity.class);
                 break;
 
 
@@ -70,11 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void initData() {
-        String[] array = getResources().getStringArray(R.array.main);
-        mDatas = Arrays.asList(array);
-        mAdapter.setDatas(mDatas);
-    }
+
+
 
 
 }
