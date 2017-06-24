@@ -1,5 +1,7 @@
 package com.common.utils;
 
+import android.content.Context;
+import android.graphics.Typeface;
 import android.view.View;
 
 /**
@@ -8,6 +10,7 @@ import android.view.View;
 
 public class CommonUtil {
 
+    public static Typeface iconfont;
     /**
      * 测量View的宽高
      *
@@ -19,4 +22,15 @@ public class CommonUtil {
         view.measure(w, h);
     }
 
+    /**
+     *
+     * @param context
+     * @return
+     */
+    public static Typeface getIconfont(Context context) {
+        if (iconfont == null) {
+            iconfont = Typeface.createFromAsset(context.getAssets(), "iconfont.ttf");
+        }
+        return iconfont;
+    }
 }

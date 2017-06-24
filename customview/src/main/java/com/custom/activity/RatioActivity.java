@@ -47,7 +47,6 @@ public class RatioActivity extends AppCompatActivity implements View.OnClickList
         leftImageView = findViewById(R.id.iv_left);
         rightImageView = findViewById(R.id.iv_right);
 
-
         leftImageView.setOnClickListener(this);
         rightImageView.setOnClickListener(this);
     }

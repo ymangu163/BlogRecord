@@ -62,5 +62,15 @@
 
     </LinearLayout>
 
+    <com.custom.view.TextViewIcon
+        android:id="@+id/icon_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/text_icon"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        />
 
 </LinearLayout>
