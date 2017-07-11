@@ -31,4 +31,5 @@ dependencies {
     compile project(':recycleview')
     compile project(':enclose')
     compile project(':customview')
+    compile project(':frame')
 }

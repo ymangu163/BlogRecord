@@ -2,12 +2,11 @@
     <string name="app_name">BlogRecord</string>
 
 
-
-
     <array name="main">
         <item>UI 设计</item>
         <item>View 封装</item>
         <item>Custom View</item>
+        <item>Frame 实践</item>
 
     </array>
 
@@ -26,6 +25,9 @@
         <item>FlexboxLayout 布局</item>
     </array>
 
+    <array name="frame_array">
+        <item>RxJava</item>
+    </array>
 
 
 </resources>
