@@ -1,14 +1,14 @@
-package com.frame.demo;
+package com.frame.rxdemo;
 
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.common.utils.DebugLog;
-import com.frame.bean.LoginRequest;
-import com.frame.bean.LoginResponse;
-import com.frame.bean.RegisterRequest;
-import com.frame.bean.RegisterResponse;
+import com.frame.bean.rxjava.LoginRequest;
+import com.frame.bean.rxjava.LoginResponse;
+import com.frame.bean.rxjava.RegisterRequest;
+import com.frame.bean.rxjava.RegisterResponse;
 import com.frame.http.HttpApi;
 import com.frame.http.RetrofitProvider;
 

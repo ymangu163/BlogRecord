@@ -1,4 +1,4 @@
-package com.frame.demo;
+package com.frame.rxdemo;
 
 import android.content.Context;
 import android.util.Log;

@@ -1,12 +1,12 @@
-package com.frame.demo;
+package com.frame.rxdemo;
 
 import android.util.Log;
 
-import com.frame.bean.UserBaseInfoRequest;
-import com.frame.bean.UserBaseInfoResponse;
-import com.frame.bean.UserExtraInfoRequest;
-import com.frame.bean.UserExtraInfoResponse;
-import com.frame.bean.UserInfo;
+import com.frame.bean.rxjava.UserBaseInfoRequest;
+import com.frame.bean.rxjava.UserBaseInfoResponse;
+import com.frame.bean.rxjava.UserExtraInfoRequest;
+import com.frame.bean.rxjava.UserExtraInfoResponse;
+import com.frame.bean.rxjava.UserInfo;
 import com.frame.http.HttpApi;
 import com.frame.http.RetrofitProvider;
 

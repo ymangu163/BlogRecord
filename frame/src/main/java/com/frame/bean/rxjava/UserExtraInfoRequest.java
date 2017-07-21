@@ -1,4 +1,4 @@
-package com.frame.bean;
+package com.frame.bean.rxjava;
 
 /**
  * Author: Season(ssseasonnn@gmail.com)
@@ -6,5 +6,5 @@ package com.frame.bean;
  * Time: 16:11
  * FIXME
  */
-public class UserExtraInfoResponse {
+public class UserExtraInfoRequest {
 }

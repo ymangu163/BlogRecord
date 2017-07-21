@@ -1,13 +1,13 @@
 package com.frame.http;
 
-import com.frame.bean.LoginRequest;
-import com.frame.bean.LoginResponse;
-import com.frame.bean.RegisterRequest;
-import com.frame.bean.RegisterResponse;
-import com.frame.bean.UserBaseInfoRequest;
-import com.frame.bean.UserBaseInfoResponse;
-import com.frame.bean.UserExtraInfoRequest;
-import com.frame.bean.UserExtraInfoResponse;
+import com.frame.bean.rxjava.LoginRequest;
+import com.frame.bean.rxjava.LoginResponse;
+import com.frame.bean.rxjava.RegisterRequest;
+import com.frame.bean.rxjava.RegisterResponse;
+import com.frame.bean.rxjava.UserBaseInfoRequest;
+import com.frame.bean.rxjava.UserBaseInfoResponse;
+import com.frame.bean.rxjava.UserExtraInfoRequest;
+import com.frame.bean.rxjava.UserExtraInfoResponse;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;

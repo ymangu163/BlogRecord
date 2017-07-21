@@ -1,4 +1,4 @@
-package com.frame.bean;
+package com.frame.bean.rxjava;
 
 /**
  * Author: Season(ssseasonnn@gmail.com)
