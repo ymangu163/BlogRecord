@@ -27,6 +27,7 @@
 
     <array name="frame_array">
         <item>RxJava</item>
+        <item>Dagger</item>
     </array>
 
 

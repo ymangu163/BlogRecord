@@ -11,8 +11,8 @@ import android.view.View;
 import com.blog.record.R;
 import com.blog.record.adapter.HomeAdapter;
 import com.blog.record.view.DividerItemDecoration;
+import com.frame.activity.DaggerActivity;
 import com.frame.activity.RxJavaActivity;
-import com.recycleview.activity.FlexboxActivity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -64,7 +64,7 @@ public class FrameActivity extends AppCompatActivity {
                 intent = new Intent(this, RxJavaActivity.class);
                 break;
             case 1:
-                intent = new Intent(this, FlexboxActivity.class);
+                intent = new Intent(this, DaggerActivity.class);
                 break;
 
 

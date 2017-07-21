@@ -28,7 +28,5 @@ public class RxJavaActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         DebugLog.d(TAG,"RxJavaActivity");
         ChapterFour.demo1();
-
-
     }
 }

@@ -5,8 +5,12 @@ package com.frame.bean.dagger;
  */
 
 public class Movie {
-
+    private String name;
     private String director;
+
+    public Movie(String name) {
+        this.name = name;
+    }
 
     public String getDirector() {
         return director;
@@ -14,5 +18,13 @@ public class Movie {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

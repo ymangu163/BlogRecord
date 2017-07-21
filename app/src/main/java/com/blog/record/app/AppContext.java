@@ -2,6 +2,9 @@ package com.blog.record.app;
 
 import android.app.Application;
 
+import com.frame.component.ApiComponent;
+import com.frame.component.DaggerApiComponent;
+import com.frame.module.ApiModule;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -16,13 +19,20 @@ import java.util.logging.Level;
 
 public class AppContext extends Application{
     public static Application mContext;
-
+    public ApiComponent apiComponent;
     @Override
     public void onCreate() {
         super.onCreate();
 
         mContext=this;
         initOkGo();
+
+        apiComponent = DaggerApiComponent.builder().apiModule(new ApiModule()).build();
+
+    }
+
+    public ApiComponent getApiComponent() {
+        return apiComponent;
     }
 
     private void initOkGo() {
